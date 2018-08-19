@@ -12,61 +12,62 @@
         <a class="main-header-logo">
     <img src="svg-nerds/nerds-logo.svg" alt="Логотип Нердс">
         </a> 
-         <ul class="site-navigation">
-    <li><a href="#">СТУДИЯ</a></li>
-    <li><a href="#">КЛИЕНТЫ</a></li>
-    <li><a href="#">МАГАЗИН</a></li>
-    <li><a href="#">КОНТАКТЫ</a></li>
-      </ul>
+        <ul class="site-navigation">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
         <ul class="user-navigation">
-            <li><a href="#">КОРЗИНА</a></li>
+            <li><a href="#">Корзина</a></li>
         </ul>
         <h1 class="page-title">Магазин готовых шаблонов</h1>
         </nav>
-      </header>
-      
-      
+       
+    </header>
      <!--Контейнер-->
       <main class="container">
-      <section class="filters">
-      <div>
-      <h2 class="cost">Стоимость</h2>
-      <input type="range" min="0" max="15000">
-          </div>
-      <div>
-      <h2 class="grid">Сетка</h2>
-   <input type="radio" name="input-radio" value="r1">Адаптивная<br>
-   <input type="radio" name="input-radio"value="r2">Фиксированная<br>
-   <input type="radio" name="input-radio" value="r3">Резиновая<br>
-      </div>
-      <div>
-      <h2 class="peculiar_properties">Особенности</h2>
-   <input type="checkbox" checked value="slider">Слайдер<br>
-   <input type="checkbox" value="blog">Блок преимуществ<br>
-   <input type="checkbox" checked value="currenteventsr">Новости<br>
-   <input type="checkbox" value="passage">Галерея<br>
-   <input type="checkbox" value="basket">Корзина<br>
-      </div>
-          </section>
+    <section class="filters">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <b>Сортировать</b>
+      <a href="#">по цене</a>
+      <a href="#">по типу</a>
+      <a href="#">по названию</a>
+         
+         <legend> Стоимость</legend>
+         <legend class="grid">Сетка</legend>
+             <input>Адаптивная
+             <input>Фиксированная
+             <input>Резинова
+        <legend class="peculiar_properties">Особенности</legend>
+          <ul>
+              <li>Слайдер</li>
+              <li>Блок преимуществ</li>
+              <li>Новости</li>
+              <li>Галерея</li>
+              <li>Корзина</li>
+          </ul>
+        </form>
+    </section>
           <button>Показать</button>
-      </main>
+      
    
    <!--Каталог товаров-->
-      <section class="catalog">
+      <artical class="catalog">
           <ul class="catalog-list">
               <li class="catalog-item">
                   <p class="catalog-item-image">
-                  <a href="catalog-item.html">
                   <img src="img/sedona.png" width="360" height="576" alt="Седона">
-                      </a>
                   </p>
               </li>
-              
+              <form>
+                  <h3>Sedona</h3>
+                  <p>Информационный сайт для туристов</p>
+                  <a href="#">9 900 руб.</a>
+              </form>
                <li class="catalog-item">
                   <p class="catalog-item-image">
-                  <a href="catalog-item.html">
                   <img src="img/phone.png" width="360" height="576" alt="Фон">
-                      </a>
                   </p>
               </li>
               
@@ -80,26 +81,20 @@
               
                <li class="catalog-item">
                   <p class="catalog-item-image">
-                  <a href="catalog-item.html">
                   <img src="img/mish.png" width="360" height="576" alt="Пинк">
-                      </a>
                   </p>
               </li>
           
            <li class="catalog-item">
                   <p class="catalog-item-image">
-                  <a href="catalog-item.html">
                   <img src="img/study.png" width="360" height="576" alt="Обучение">
-                      </a>
                   </p>
               </li>
           </ul>
           
            <li class="catalog-item">
                   <p class="catalog-item-image">
-                  <a href="catalog-item.html">
                   <img src="img/kvass.png" width="360" height="576" alt="Квас">
-                      </a>
                   </p>
               </li>
               <ul class="pagination-list">
@@ -108,10 +103,18 @@
               <li class="pagination-item"><a href="#">3</a><li>
               <li class="pagination-item"><a href="#">Следующая</a><li>
           </ul>
-      </section>
+          </artical>
+      </main>
    <footer class="main-footer">
               <section> 
-              <img src="img/map.png" alt="Карта" width="1200px"> 
+              <img src="img/map.png" alt="Карта"> 
+                 <form>
+                  <b>NЁRDS DESIGN STUDIO</b>
+              <p>191186, Санкт-Петербург, 
+                ул. Б. Конюшенная, д. 19/8
+                  тел. +7 (812) 275-75-75</p>
+                  <a href="#">Напишите нам</a>
+                  </form>
               </section>
              <div class="footer-social">
               
@@ -124,6 +127,7 @@
               <b>Давайте дружить, это выгодно!</b>
               <p>Скидка 10% для друзей из социальных сетей.</p>
           </footer>
+        
 </body>
 </html> 
 

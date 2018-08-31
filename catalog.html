@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+<!--Шапка сайта-->
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
+      <img src="svg-nerds/nerds-logo.svg" alt="Логотип Нердс">
+    </a>
+    <ul class="site-navigation">
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Клиенты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <a href="#" class="user-navigation">Корзина</a>
+  </nav>
+</header>
+<!--Контейнер-->
+  <main class="container">
+    <h1>Магазин готовых шаблонов</h1>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend> Стоимость</legend>
+        <!-- Будет разметка для стоимости-->
+      </fieldset>
+      <fieldset>
+        <legend class="grid">Сетка</legend>
+          <ul>
+            <li>
+              <input id="grid-adaptive" type="radio" name="grid" value="adaptive"checked>
+              <label for="grid-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input id="grid-fixed" type="radio" name="grid" value="fixed">
+              <label for="grid-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input id="grid-strech" type="radio" name="grid" value="strech">
+              <label for="grid-strech">Резиновая</label>
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend class="peculiar_properties">Особенности</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="peculiar" id="slider">
+              <label for="slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="peculiar" id="advantages">
+              <label for="advantages">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="peculiar" id="current">
+              <label for="current">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="peculiar" id="passage">
+              <label for="passage">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="peculiar" id="basket">
+              <label for="basket">Корзина</label>
+            </li>
+          </ul>
+      </fieldset>
+      <button>Показать</button>
+      </form>
+      <div>
+        <b>Сортировать</b>
+        <a href="#">по цене</a>
+        <a href="#">по типу</a>
+        <a href="#">по названию</a>
+        <a href="#">по возрастанию</a>
+        <a href="#">по убыванию</a>
+      </div>
+<!--Каталог товаров-->
+    <ul class="catalog-list">
+      <li class="catalog-item">
+        <article>
+          <img src="img/sedona.png" width="360" height="576" alt="Седона">
+          <h3>
+            <a href="#">Седона</a>
+          </h3>
+          <p>Какое-то описание</p>
+          <a>9900 руб.</a>
+      </li>
+      <li class="catalog-item">
+        <article>
+          <img src="img/phone.png" width="360" height="576" alt="Фон">
+          <h3>
+            <a href="#">Фон</a>
+          </h3>
+          <p>Какое-то описание</p>
+          <a>9900 руб.</a>
+      </li>
+      <li class="catalog-item">
+        <article>
+          <img src="img/borod.png" width="360" height="576" alt="Бород">
+          <h3>
+            <a href="#">Бородинский</a>
+          </h3>
+          <p>Какое-то описание</p>
+          <a>9900 руб.</a>
+      </li>
+      <li class="catalog-item">
+        <article>
+          <img src="img/mish.png" width="360" height="576" alt="Пинк">
+          <h3>
+            <a href="#">Пинк</a>
+          </h3>
+          <p>Какое-то описание</p>
+          <a>9900 руб.</a>
+      </li>
+      <li class="catalog-item">
+        <article>
+          <img src="img/study.png" width="360" height="576" alt="Обучение">
+          <h3>
+            <a href="#">Обучение</a>
+          </h3>
+          <p>Какое-то описание</p>
+          <a>9900 руб.</a>
+      </li>
+      <li class="catalog-item">
+        <article>
+          <img src="img/kvass.png" width="360" height="576" alt="Квас">
+          <h3>
+            <a href="#">Квас</a>
+          </h3>
+          <p>Какое-то описание</p>
+          <a>9900 руб.</a>
+      </li>
+    </ul>
+    <nav>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">Следующая</a>
+    </nav>
+  </main>
+  <footer class="main-footer">
+    <section>
+      <img src="img/map.png" alt="Карта">
+      <div>
+        <p>
+          <b>NЁRDS DESIGN STUDIO</b>
+        </p>
+        <p>191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a href="#">Напишите нам</a>
+      </div>
+    </section>
+      <div class="footer-social">
+        <ul>
+          <li><a href="social-button"href="#">Вконтакте</a></li>
+          <li><a href="social-button"href="#">Фейсбук</a></li>
+          <li><a href="social-button"href="#">Инстаграмм</a></li>
+        </ul>
+        <p>
+          <b>Давайте дружить, это выгодно!</b>
+        </p>
+        <p>
+            Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+  </footer>
+</body>
+</html>

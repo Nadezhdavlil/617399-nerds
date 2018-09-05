@@ -8,23 +8,23 @@
 <!--Шапка сайта-->
 <header class="main-header">
   <nav class="main-navigation">
-    <a href="index.html" class="main-header-logo">
+    <a class="main-logo">
       <img src="svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
     </a>
-    <ul class="site-navigation">
+    <ul class="navigation-list">
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
-    <a href="#" class="user-navigation">Корзина</a>
+    <a href="#" class="cart-link">Корзина</a>
   </nav>
 </header>
 <!--Контейнер-->
   <main class="container">
     <h1>Магазин готовых шаблонов</h1>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
+      <fieldset class="filter-fieldset">
         <legend> Стоимость</legend>
         <div class="range-controls">
           <div class="scale">
@@ -40,8 +40,8 @@
           </div>
         </div>
       </fieldset>
-      <fieldset>
-        <legend class="grid">Сетка</legend>
+      <fieldset class="filter-fieldset">
+        <legend>Сетка</legend>
           <ul>
             <li>
               <input id="grid-adaptive" type="radio" name="grid" value="adaptive"checked>
@@ -57,8 +57,8 @@
             </li>
           </ul>
       </fieldset>
-      <fieldset>
-        <legend class="peculiar_properties">Особенности</legend>
+      <fieldset class="filter-fieldset">
+        <legend>Особенности</legend>
           <ul>
             <li>
               <input class="visually-hidden" type="checkbox" name="peculiar" id="slider">
@@ -95,7 +95,7 @@
 <!--Каталог товаров-->
     <ul class="catalog-list">
       <li class="catalog-item">
-        <article>
+        <article class="product">
           <img src="img/sedona.png" width="360" height="576" alt="Седона">
           <h3>
             <a href="#">Седона</a>
@@ -105,7 +105,7 @@
         </article>
       </li>
       <li class="catalog-item">
-        <article>
+        <article class="product">
           <img src="img/phone.png" width="360" height="576" alt="Фон">
           <h3>
             <a href="#">Фон</a>
@@ -115,7 +115,7 @@
         </article>
       </li>
       <li class="catalog-item">
-        <article>
+        <article class="product">
           <img src="img/borod.png" width="360" height="576" alt="Бородинский">
           <h3>
             <a href="#">Бородинский</a>
@@ -125,7 +125,7 @@
         </article>
       </li>
       <li class="catalog-item">
-        <article>
+        <article class="product">
           <img src="img/mish.png" width="360" height="576" alt="Мишка">
           <h3>
             <a href="#">Пинк</a>
@@ -135,7 +135,7 @@
         </article>
       </li>
       <li class="catalog-item">
-        <article>
+        <article class="product">
           <img src="img/study.png" width="360" height="576" alt="Обучение">
           <h3>
             <a href="#">Обучение</a>
@@ -145,7 +145,7 @@
         </article>
       </li>
       <li class="catalog-item">
-        <article>
+        <article class="product">
           <img src="img/kvass.png" width="360" height="576" alt="Квас">
           <h3>
             <a href="#">Квас</a>
@@ -155,7 +155,7 @@
         </article>
       </li>
     </ul>
-    <nav>
+    <nav class="pagination">
       <a href="#">1</a>
       <a href="#">2</a>
       <a href="#">3</a>

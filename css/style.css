@@ -1,16 +1,82 @@
 body {
   margin: 0;
-  padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
-  color: #999;
+  color: #000000;
+  background-color: #eeeeee;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation{
+  line-height:30px;
+  font-style: medium;
+}
+.proposal h3{
+  font-size: 24px;
+  font-style: bold;
+  line-height:30px;
   text-transform: uppercase;
+}
+.slide b {
+  font-size: 55px;
+  font-style: medium;
+  line-height:55px;
+}
+.orders{
+  font-size: 16px;
+  line-height: 24px;
+  font-style: bold;
+  text-transform: uppercase;
+}
+.interest{
+  font-size: 45px;
+  line-height: 10,06px;
+  font-style: bold;
+}
+.filter-fieldset legend{
+  font-size: 18px;
+  font-style: bold;
+  line-height: 30px;
+  font-style: bold;
+  text-transform: uppercase;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
 
-  background-color: #000;
-  background-image: url("img/bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button{
+  display: inline-block;
+  border-radius: 2px;
+  font-style: medium;
+  line-height:18px;
+  font: inherit;
+  color: #feeded;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  cursor: pointer;
+}
+.button:hover{
+  color:#ffffff;
+  background-color: #e74246;
+}
+.button:active {
+  color:#e38384;
+  background-color: #d7373b;
+  border-top: 1px solid #c13135;
 }

@@ -9,6 +9,40 @@ body {
 }
 a {
   text-decoration: none;
+  color:#000000;
+}
+.main-header{
+background-color: #eeeeee;
+outline: 4px solid #EE82EE;
+}
+.main-navigation{
+display: flex;
+}
+.navigation-list{
+ list-style: none;
+ text-transform: uppercase;
+ display: flex;
+}
+.navigation-list a:hover{
+color:#fb565a;
+}
+.navigation-list a:focus{
+color:#bdbdbd;
+}
+.navigation-list a:active{
+color:#000000;
+}
+.main-navigation .cart-link{
+text-transform: uppercase;
+}
+.main-navigation .cart-link:hover{
+color:#fb565a;
+}
+.main-navigation .cart-link:focus{
+color:#bdbdbd;
+}
+.main-navigation .cart-link:active{
+color:#000000;
 }
 .main-navigation{
   line-height:30px;
@@ -79,4 +113,50 @@ a {
   color:#e38384;
   background-color: #d7373b;
   border-top: 1px solid #c13135;
+}
+.services-list{
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+}
+.services-list li{
+  list-style: none;
+}
+.slogan{
+  width:50%;
+}
+.advantages{
+  width:50%;
+}
+.description{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.clientele-list{
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid #eeeeee;
+}
+.footer{
+  display: flex;
+}
+.footer-social{
+  display: flex;
+  list-style: none;
+}
+.service-container{
+  display: flex;
+}
+.catalogue li{
+list-style: none;
+}
+.catalog-list{
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.alternative{
+width: 20%;
 }

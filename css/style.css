@@ -1,15 +1,22 @@
 body {
   margin: 0;
+  padding: 0;;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 a {
   text-decoration: none;
   color:#000000;
+}
+ul{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
 .main-header{
 background-color: #eeeeee;
@@ -17,11 +24,27 @@ outline: 4px solid #EE82EE;
 }
 .main-navigation{
 display: flex;
+justify-content: center;
 }
 .navigation-list{
  list-style: none;
  text-transform: uppercase;
  display: flex;
+ padding-left: 45px;
+ padding-top: 83px;
+}
+.navigation-list li{
+ padding-left: 45px;
+}
+.main-logo{
+padding-top: 48px;
+padding-right: 200px;
+}
+.cart-link{
+ margin-left: 245px;
+ background-image: url(svg-nerds/cart-icon.svg);
+ background-repeat: no-repeat;
+ padding-top: 83px;
 }
 .navigation-list a:hover{
 color:#fb565a;
@@ -71,11 +94,13 @@ color:#000000;
   font-style: bold;
 }
 .filter-fieldset legend{
+  width: 260px;
   font-size: 18px;
   font-style: bold;
   line-height: 30px;
   font-style: bold;
   text-transform: uppercase;
+  list-style: none;
 }
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -116,26 +141,26 @@ color:#000000;
 }
 .services-list{
   display: flex;
+  justify-content: center;
   border-bottom: 1px solid #eeeeee;
 }
 .services-list li{
   list-style: none;
 }
 .slogan{
-  width:50%;
+  width:660px;
 }
 .advantages{
-  width:50%;
+  width:360px;
 }
 .description{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .clientele-list{
   display: flex;
-  list-style: none;
+  justify-content: center;
   border-bottom: 1px solid #eeeeee;
 }
 .footer{
@@ -147,16 +172,150 @@ color:#000000;
 }
 .service-container{
   display: flex;
+  justify-content: center;
 }
-.catalogue li{
-list-style: none;
-}
-.catalog-list{
-width: 80%;
+.catalog{
+width: 760px;
 display: flex;
-flex-wrap: wrap;
-justify-content: center;
+align-items: baseline;
 }
 .alternative{
-width: 20%;
+width: 260px;
 }
+
+
+/*svg при наведении курсора*/
+/*Социальные кнопки*/
+.social-button:hover{
+border-color: #e1e1e1;
+}
+.social-button:hover path{
+  fill: #e74246;
+}
+/*Логотип*/
+.main-logo:hover{
+  color: #000000;
+}
+.main-logo:hover path{
+  fill: #303030;
+}
+.main-logo:active path{
+  fill: #a6a6a6;
+}
+/*png-картинки*/
+.clientele-list li:hover{
+  filter: brightness(0);
+}
+/*Слайдер*/
+.slider {
+    position: relative;
+}
+.slider input[type=radio] {
+    display: none;
+}
+.slider-inner {
+    overflow: hidden;
+}
+.slider-slides {
+    width: 600%;
+}
+.slider-slides img {
+    float: left;
+    width: 698px;
+    height: 413px;
+}
+.slider-controls {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
+    margin: 0 3px;
+    cursor: pointer;
+    border: 4px solid white;
+    background-color: #cccccc;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #666666;
+}
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-450px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-900px);
+}
+/*Окончание слайдера*/
+
+/*Ползунки*/
+.range-filter{
+    padding-top:10px;
+    width:240px;
+    margin:auto;
+    margin-bottom:10px;
+}
+.range-controls{
+    position:relative;
+    width: 260px;
+    height: 80px;
+    margin-bottom:15px;
+    padding:0 30px;
+    background:#eeeeee;
+    border-radius:2px;
+    overflow:hidden;
+}
+.scale{
+    margin-top:39px;
+    height:2px;
+    background:#d7dcde;
+}
+.bar{
+    height:2px;
+    background:#00ca74;
+}
+.toggle{
+    position:absolute;
+    top:30px;
+    left:30px;
+    width:4px;
+    height:4px;
+    border:8px solid white;
+    background:#ababab;
+    cursor:pointer;
+    border-radius:50%;
+}
+.toggle.min-toggle{
+    left:70px;
+}
+.toggle.max-toggle{
+    left:165px;
+}
+.min-price, .max-price{
+    width:55px;
+    padding:8px 10px;
+    margin-left:10px;
+    border:none;
+    background:#eeeeee;
+    font-size:16px;
+    font-family:"Tahoma", sans-serif;
+    text-align:center;
+    color:#283136;
+    border-radius:2px;
+
+}
+.min-price{
+    margin-right:14px;
+}
+
+/*Ползунки окончание*/

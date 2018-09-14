@@ -1,6 +1,11 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1160px;
+}
 body {
   margin: 0;
-  padding: 0;;
+  min-width: 1200px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -23,41 +28,55 @@ background-color: #eeeeee;
 }
 .main-navigation{
 display: flex;
-justify-content: center;
+align-items:flex-start;
+padding-top: 49px;
+padding-bottom: 36px;
 }
 .navigation-list{
- list-style: none;
  text-transform: uppercase;
  display: flex;
+ align-items:baseline;
  padding-left: 45px;
- padding-top: 83px;
-}
-.navigation-list li{
- padding-left: 45px;
+ margin-top: 31px;
 }
 .main-logo{
-padding-top: 48px;
-padding-right: 200px;
+margin-right: 155px;
+}
+.navigation-list li{
+ margin-right: 45px;
+}
+.navigation-list li:last-child{
+margin-right: 0px;
 }
 .cart-link{
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-left: 245px;
-  background-repeat: no-repeat;
-  padding-top: 83px;
+  margin-left: auto;
+  position:relative;
 }
 .cart-link svg {
-  margin-right: 30px;
+  position: absolute;
 }
+
+/*Логотип наведение*/
+.main-logo:hover{
+  opacity: 0.8;
+}
+.main-logo:active{
+  opacity: 0.3;
+}
+/*Логотип окончание*/
+
+
+/*Меню наведение*/
 .navigation-list a:hover{
 color:#fb565a;
 }
-.navigation-list a:focus{
+.navigation-list a:active{
 color:#bdbdbd;
 }
 .active{
 border-bottom: 1px solid #fb565a;
 }
+/*Корзина наведение*/
 .main-navigation .cart-link{
 text-transform: uppercase;
 }
@@ -74,6 +93,8 @@ color:#000000;
   line-height:30px;
   font-style: medium;
 }
+/*Корзина - окончание*/
+
 
 /*Магазин готовых шаблонов*/
 .shop-templates{
@@ -86,28 +107,14 @@ color:#000000;
 }
 /*Окончание - Магазин готовых шаблонов*/
 
-.proposal h3{
-  font-size: 24px;
-  font-style: bold;
-  line-height:30px;
-  text-transform: uppercase;
-}
+
 .slide b {
   font-size: 55px;
   font-style: medium;
   line-height:55px;
 }
-.orders{
-  font-size: 16px;
-  line-height: 24px;
-  font-style: bold;
-  text-transform: uppercase;
-}
-.interest{
-  font-size: 45px;
-  line-height: 10,06px;
-  font-style: bold;
-}
+
+
 
 /*Формы*/
 .service-container{
@@ -130,8 +137,8 @@ color:#000000;
 }
 .catalog-list li {
   margin-right: 30px;
+  margin-bottom: 33px;
   width: 365px;
-  background-color: #cfc;
 }
 .catalog-list li:nth-child(2n+2) {
   margin-right: 0;
@@ -166,51 +173,111 @@ color:#000000;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*Кнопки*/
 .button{
-  display: inline-block;
+  display: inline-flex;
+  font-family:"Roboto", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+  border: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 2px;
-  font-style: medium;
-  line-height:18px;
-  font: inherit;
-  color: #feeded;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
   background-color: #fb565a;
-  cursor: pointer;
+  color:#ffffff;
+  text-transform: uppercase;
 }
 .button:hover{
-  color:#ffffff;
   background-color: #e74246;
 }
-.button-green {
-  background-color: #00ca74;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.button-yellow {
-  background-color: #efc84a;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.button:active {
-  color:#e38384;
+.button:active{
   background-color: #d7373b;
-  border-top: 1px solid #c13135;
+  color: #e48789;
+  box-shadow: inset 0 3px 0 0 #c13135;
 }
+/*Зеленая кнопка*/
+.button.button-green {
+  background-color: #00ca74;
+}
+.button.button-green:hover{
+  background-color: #00bc6c;
+}
+.button.button-green:active{
+  background-color: #00aa62;
+  color:#74c69c;
+  box-shadow: inset 0 3px 0 0 #009958;
+}
+/*Желтая кнопка*/
+.button.button-yellow {
+  background-color: #efc84a;
+}
+.button.button-yellow:hover{
+  background-color: #eab534;
+}
+.button.button-yellow:active{
+  background-color: #e5a722;
+  color: #ebbc6a;
+  box-shadow: inset 0 3px 0 0 #ce961f;
+}
+/*Серая кнопка*/
+.button.button-gray{
+  background-color: #eeeeee;
+  color:#000000;
+}
+.button.button-gray:hover{
+  background-color: #dfdfdf;
+}
+.button.button-gray:active{
+  background-color: #d5d5d5;
+  color:#bfbfbf;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
+}
+/*Кнопки-окончание*/
+
+/*Верстка контейнера*/
 .services-list{
   display: flex;
-  justify-content: center;
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 80px;
+  margin-top: 80px;
 }
 .services-item{
   width: 300px;
-  padding-left: 100px;
+  margin-right: 100px;
 }
-.services-list li{
-  list-style: none;
+.services-item:last-child{
+  margin-right: 0px;
 }
+.proposal{
+  background-image: url(../img/red.png);
+  background-repeat: no-repeat;
+  padding-top: 146px;
+  padding-bottom: 30px;
+}
+.proposal-2{
+  background-image: url(../img/green.png);
+  background-repeat: no-repeat;
+  padding-top: 146px;
+  padding-bottom: 30px;
+}
+.proposal-3{
+  background-image: url(../img/amber.png);
+  background-repeat: no-repeat;
+  padding-top: 146px;
+  padding-bottom: 30px;
+}
+.proposal h3,
+.proposal-2 h3,
+.proposal-3 h3{
+  font-size: 24px;
+  font-style: bold;
+  line-height:30px;
+  text-transform: uppercase;
+}
+/*Верстка второго контейнера*/
 .slogan{
   width:660px;
 }
@@ -219,42 +286,108 @@ color:#000000;
 }
 .description{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  justify-content: space-between;
   border-bottom: 1px solid #eeeeee;
+  margin-top: 40px;
+  padding-bottom: 80px;
+}
+.studio{
+  font-size: 45px;
+  line-height: 45px;
+  font-style: medium;
+}
+.orders{
+  font-size: 16px;
+  line-height: 24px;
+  font-style: bold;
+  text-transform: uppercase;
+}
+.interest{
+  font-size: 45px;
+  line-height: 10,06px;
+  font-style: bold;
+}
+.styled-marker-list li:before {
+  content: "-";
+  color: #fb565a;
 }
 .slogan{
  width: 660px;
 }
-.clientele-list{
-  display: flex;
-  justify-content: center;
-  padding-top: 65px;
+
+
+/*Верстка третьего контейнера*/
+.clients{
+  padding-top: 45px;
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 65px;
+  padding-bottom: 45px;
 }
-.map{
-padding-top: 80px;
+.clients-list{
+display: flex;
 }
-.clientele-item{
+.clients-item{
+  width: 25%;
+}
+.clients-item{
   border-right: 1px solid #cccccc;
   padding-right: 50px;
   margin-left:50px;
 }
+.clients-item:last-child{
+  border-right: none;
+}
+/*Карта*/
+.map{
+padding-top: 80px;
+background-image: url(../img/map.png);
+min-height: 414px;
+}
+/*Блок с контактами*/
+.footer-contacts{
+width: 319px;
+height: 309px;
+background-color: #ffffff;
+text-align: center;
+padding-top: 57px;
+margin-left: 140px;
+}
+.block-contact{
+  font-size: 18px;
+  line-height: 30px;
+  font-style: bold;
+}
+.address-contact{
+  font-size: 16px;
+  line-height: 18px;
+  font-style: regular;
+  color: #989898;
+}
+.contact-information{
+  margin-bottom: 37px;
+}
 .footer{
   display: flex;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-left: 20px;
 }
 .footer-social{
   display: flex;
-  list-style: none;
+  margin-right: 140px;
 }
-
-
-
-
-
+.footer-social li{
+  margin-right: 10px;
+}
+.cooperation{
+  font-size: 36px;
+  line-height: 36px;
+  font-style: bold;
+}
+.discount{
+  font-size: 16px;
+  line-height: 22px;
+  font-style: regular;
+}
 /*svg при наведении курсора*/
 /*Социальные кнопки*/
 
@@ -270,10 +403,11 @@ border-radius: 50%;
   padding-top:30px;
 }
 .footer-social li:hover{
-background: #e1e1e1;
+  background: #e74246;
 }
-.footer-social li:hover path{
-  fill: #e74246;
+.footer-social li:active{
+  background: #d7373b;
+  color:#e37376;
 }
 /*Логотип*/
 .main-logo:hover{
@@ -287,13 +421,13 @@ background: #e1e1e1;
 }
 /*png-картинки*/
 
-.clientele-list li{
-  opacity:0.5;
+.clients-list a{
+  opacity:0.2;
 }
-.clientele-list li:hover{
+.clients-list a:hover{
   opacity: 1;
 }
-.clientele-list li:active{
+.clients-list a:active{
   opacity: 0.1;
 }
 /*Слайдер*/
@@ -346,6 +480,20 @@ background: #e1e1e1;
 #btn-3:checked ~ .slider-inner .slider-slides {
     transform: translate(-900px);
 }
+.slider-item-1{
+background-image: url(../img/sl1.png);
+background-repeat: no-repeat;
+}
+/*
+.slider-item-2{
+  background-image: url(../img/sl2.png);
+  background-repeat: no-repeat;
+}
+.slider-item-3{
+  background-image: url(../img/sl3.png);
+  background-repeat: no-repeat;
+}
+*/
 /*Окончание слайдера*/
 
 /*Ползунки*/
@@ -513,8 +661,5 @@ background: #e1e1e1;
 .radio input:disabled + label::before {
   opacity: 0.1;
 }
-/*Каталог наведение*/
-.product{
-  background-image: url('../img/browser.svg');
-  background-repeat: no-repeat;
-}
+
+/*Каталог*/

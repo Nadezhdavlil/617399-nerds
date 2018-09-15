@@ -51,9 +51,12 @@ margin-right: 0px;
 .cart-link{
   margin-left: auto;
   position:relative;
+  padding-top: 27px;
 }
 .cart-link svg {
   position: absolute;
+  right:101px;
+  bottom:7px;
 }
 
 /*Логотип наведение*/
@@ -73,7 +76,7 @@ color:#fb565a;
 .navigation-list a:active{
 color:#bdbdbd;
 }
-.active{
+.main-navigation .active{
 border-bottom: 1px solid #fb565a;
 }
 /*Корзина наведение*/
@@ -307,9 +310,14 @@ color:#000000;
   line-height: 10,06px;
   font-style: bold;
 }
-.styled-marker-list li:before {
-  content: "-";
-  color: #fb565a;
+.styled-marker-list li::before {
+  content: " ";
+  background: #fb565a;
+  width: 25px;
+  height: 2px;
+  float: left;
+  margin-right: 11px;
+  margin-top: 11px;
 }
 .slogan{
  width: 660px;
@@ -431,69 +439,48 @@ border-radius: 50%;
   opacity: 0.1;
 }
 /*Слайдер*/
-.slider {
-    position: relative;
-}
-.slider input[type=radio] {
-    display: none;
-}
-.slider-inner {
-    overflow: hidden;
-}
-.slider-slides {
-    width: 600%;
-}
-.slider-slides img {
-    float: left;
-    width: 698px;
-    height: 413px;
-}
-.slider-controls {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.slider-controls label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.8);
-    margin: 0 3px;
-    cursor: pointer;
-    border: 4px solid white;
-    background-color: #cccccc;
-}
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-    background-color: #666666;
-}
-#btn-1:checked ~ .slider-inner .slider-slides {
-    transform: translate(0);
-}
-
-#btn-2:checked ~ .slider-inner .slider-slides {
-    transform: translate(-450px);
-}
-
-#btn-3:checked ~ .slider-inner .slider-slides {
-    transform: translate(-900px);
-}
-.slider-item-1{
+.slider-item.slider-item-1{
 background-image: url(../img/sl1.png);
 background-repeat: no-repeat;
+background-position: right;
 }
-/*
-.slider-item-2{
+
+.slider-item.slider-item-2{
   background-image: url(../img/sl2.png);
   background-repeat: no-repeat;
+  background-position: right;
 }
-.slider-item-3{
+.slider-item.slider-item-3{
   background-image: url(../img/sl3.png);
   background-repeat: no-repeat;
+  background-position: right;
 }
-*/
+.slider-item{
+min-height: 413px;
+background-color: #eeeeee;
+padding-top: 4px;
+
+}
+.slider-title{
+font-size: 55px;
+line-height: 55px;
+font-style: medium;
+max-width: 520px;
+min-width: 415px;
+margin-bottom: 30px;
+}
+.slider-item .button{
+margin-top: 45px;
+padding-left: 60px;
+padding-right: 60px;
+padding-top: 18px;
+padding-bottom: 18px;
+}
+.slider-caption{
+  max-width: 520px;
+  min-width: 415px;
+}
 /*Окончание слайдера*/
 
 /*Ползунки*/

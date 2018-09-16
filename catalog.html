@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <!--Шапка сайта-->
-<header class="main-header">
-  <nav class="main-navigation">
-    <a class="main-logo" a href="index.html">
-      <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Нердс">
+  <header class="main-header container">
+      <nav class="main-navigation">
+      <a class="main-logo" a href="index.html">
+        <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Нердс">
+      </a>
     <ul class="navigation-list">
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
-      <li><a href="catalog.html" class="active">Магазин</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
     <a href="#" class="cart-link">
@@ -23,12 +24,11 @@
       Корзина
     </a>
   </nav>
-</header>
+  </header>
 <!--Контейнер-->
 
-    <h1 class="shop-templates">Магазин готовых шаблонов</h1>
-    <main class="service-container">
-    <div class="alternative">
+    <h1 class="shop-templates container">Магазин готовых шаблонов</h1>
+    <main class="service-container container">
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="filter-fieldset">
         <legend> Стоимость</legend>
@@ -89,7 +89,6 @@
         </fieldset>
         <button type="submit" class="button button-gray">Показать</button>
         </form>
-      </div>
       <div class="catalogue">
         <div>
           <b>Сортировать</b>

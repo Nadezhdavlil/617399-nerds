@@ -436,9 +436,11 @@ border-radius: 50%;
   opacity: 0.1;
 }
 /*Слайдер*/
+.slider{
+background-color: #eeeeee;
+}
 .slider-item{
 min-height: 413px;
-background-color: #eeeeee;
 padding-top: 4px;
 }
 .slider-item.slider-item-1{
